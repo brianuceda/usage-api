@@ -1,0 +1,11 @@
+services:
+  usage_api:
+    build: .
+    container_name: usage_api
+    restart: unless-stopped
+    networks:
+      - proxynet_public
+
+networks:
+  proxynet_public:
+    external: true
