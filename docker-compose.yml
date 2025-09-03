@@ -4,8 +4,8 @@ services:
     container_name: usage_api
     restart: unless-stopped
     networks:
-      - proxynet_public
+      - satelite_default
 
 networks:
-  proxynet_public:
+  satelite_default:
     external: true
